@@ -4,7 +4,7 @@
 <head>
 
 
-  <title>My Dream Vacation</title>
+  <title>My projet 1</title>
 
   <style>
     .grid-container {
@@ -12,6 +12,7 @@
       grid-template-columns: auto auto auto auto;
       gap: 10px;
       padding: 10px;
+      border-radius: calc(var(--curve) * 1px);
     }
     
     .grid-container > div {
@@ -19,6 +20,7 @@
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
+      border-radius: calc(var(--curve) * 1px);
     }
     </style>
 
@@ -26,7 +28,7 @@
 <style>
 body {
   font-family: system-ui;
-  background: #f06d06;
+  background: #b3a69d;
   color: black;
   text-align: center;
 }
@@ -50,43 +52,29 @@ body {
   <h2>Click on the Customer phone id to check its repairing status</h2>
   <img id= "img1" src="https://cdn2.howtostartanllc.com/images/business-ideas/business-idea-images/cell-phone-repair.jpg" style="height:300px">
   <h3>List of Customer phones</h3>
-  <div >
-    <ul>
-     <button onclick="showAlert1()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert2()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert3()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert4()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert5()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert6()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert7()"><li class="box">No customer yet</li></button>
-     <button onclick="showAlert8()"><li class="box">No customer yet</li></button>
-
-      
-
-    </ul>
-  </div>
-
+  
 
   <div class="grid-container">
-    <div>
+    <button onclick="showAlert1()"><div>
         <img src="https://pbs.twimg.com/profile_images/1184490259645698048/zWg5ukOE_400x400.png" alt="Avatar" style="width:10%">
         
           <h4><b>Phone</b></h4>
-          <p>identification</p>
-        </div>
+          <p class="box1"> identification</p>
+        </div></button>
 
-    <div>
+        <button onclick="showAlert2()"><div>
         <img src="https://pbs.twimg.com/profile_images/1184490259645698048/zWg5ukOE_400x400.png" alt="Avatar" style="width:10%">
           <h4><b>Phone</b></h4>
-          <p>identification</p>
-        </div>
+          <p class="box1"> identification</p>
+        </div></button>
 
-    <div>3</div>  
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>  
-    <div>7</div>
-    <div>8</div>
+        <button onclick="showAlert3()"><div>
+            <img src="https://pbs.twimg.com/profile_images/1184490259645698048/zWg5ukOE_400x400.png" alt="Avatar" style="width:10%">
+              <h4><b>Phone</b></h4>
+              <p class="box1"> identification</p>
+            </div></button>
+
+  
   </div>
 
 

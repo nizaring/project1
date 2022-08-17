@@ -31,8 +31,8 @@ function SmartPhone(name,id) {
     }; 
 
 
-var tab =document.getElementsByClassName('box');
-
+var tab =document.getElementsByClassName("box");
+var tab1 =document.getElementsByClassName("box1");
 //function add(name,id,state,cost){
 
 
@@ -50,20 +50,13 @@ var phone003=SmartPhone("nokia","J21")
 phone003.state("repaired")
 phone003.cost("60 DTN")
 
-
-var phone004=SmartPhone("....","....");
-var phone005=SmartPhone("....","....");
-var phone006=SmartPhone("....","....");
-var phone007=SmartPhone("....","....");
-var phone008=SmartPhone("....","....");
-var phone0098=SmartPhone("....","....");
-var phone010=SmartPhone("....","...."); 
+ 
 
 var DB = [phone001,phone002,phone003];
 
 for (i=0;i<DB.length;i++){
 console.log(DB[i]);
-tab[i].innerText="Customer Phone_ID: "+DB[i].id;
+tab1[i].innerText="Customer Phone_ID: "+DB[i].id;
 };
 
 
