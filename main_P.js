@@ -38,24 +38,32 @@ var tab =document.getElementsByClassName('box');
 
 //}
 
-var nizar=SmartPhone("oppo","F01");
-nizar.state("not repaired")
+var phone001=SmartPhone("oppo","F01");
+phone001.state("not repaired")
+phone001.cost("0")
 
-var lotfi=SmartPhone("samsung","S02")
-var hamza=SmartPhone("nokia","J21")
-var user001=SmartPhone("....","....");
-var user002=SmartPhone("....","....");
-var user003=SmartPhone("....","....");
-var user004=SmartPhone("....","....");
-var user005=SmartPhone("....","....");
-var user006=SmartPhone("....","....");
-var user007=SmartPhone("....","...."); 
+var phone002=SmartPhone("samsung","S02")
+phone002.state("repaired")
+phone002.cost("30 DTN")
 
-var DB = [nizar,lotfi,hamza];
+var phone003=SmartPhone("nokia","J21")
+phone003.state("repaired")
+phone003.cost("60 DTN")
+
+
+var phone004=SmartPhone("....","....");
+var phone005=SmartPhone("....","....");
+var phone006=SmartPhone("....","....");
+var phone007=SmartPhone("....","....");
+var phone008=SmartPhone("....","....");
+var phone0098=SmartPhone("....","....");
+var phone010=SmartPhone("....","...."); 
+
+var DB = [phone001,phone002,phone003];
 
 for (i=0;i<DB.length;i++){
 console.log(DB[i]);
-tab[i].innerText="Customer Name: "+ DB[i].name  +"       "+"& Phone_ID: "+DB[i].id;
+tab[i].innerText="Customer Phone_ID: "+DB[i].id;
 };
 
 
@@ -64,13 +72,18 @@ tab[i].innerText="Customer Name: "+ DB[i].name  +"       "+"& Phone_ID: "+DB[i].
 
 
 function showAlert1(){
- alert(DB[0].state)
- ;}
+ alert(DB[0].state+"& it cost: "+DB[0].cost)
+ }
 
-function showAlert2(){
-    alert(DB[1].state)
-    ;}
-      
+ function showAlert2(){
+    alert(DB[1].state+"& it cost: "+DB[1].cost)
+    }
+
+    function showAlert3(){
+        alert(DB[2].state+"& it cost: "+DB[2].cost)
+        }
+
+
 
 
 
