@@ -10,7 +10,7 @@ function each(coll, f) {
           } 
     } 
 }
-
+document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
 function SmartPhone(name,id) {
       var phone ={};
       phone.name=name;
@@ -67,8 +67,6 @@ tab[i].innerText="Customer Phone_ID: "+DB[i].id;
 };
 
 
-// var imgG=document.getElementById('img1');
-// imgG.src="https://www.tadreex.com/images/Tadreex.png"
 
 
 function showAlert1(){
