@@ -30,8 +30,7 @@ function SmartPhone(name,id) {
         return 'the repairing will cost ' + this.cost;
     }; 
 
-
-var tab =document.getElementsByClassName("box");
+var tab2 =document.getElementsByClassName("box2");
 var tab1 =document.getElementsByClassName("box1");
 //function add(name,id,state,cost){
 
@@ -57,6 +56,7 @@ var DB = [phone001,phone002,phone003];
 for (i=0;i<DB.length;i++){
 console.log(DB[i]);
 tab1[i].innerText="Customer Phone_ID: "+DB[i].id;
+tab2[i].innerText="Phone_State: "+DB[i].state;
 };
 
 
@@ -67,12 +67,12 @@ function showAlert1(){
  }
 
  function showAlert2(){
-    alert(DB[1].state+"& it cost: "+DB[1].cost)
-    }
+ alert(DB[1].state+"& it cost: "+DB[1].cost)
+ }
 
-    function showAlert3(){
-        alert(DB[2].state+"& it cost: "+DB[2].cost)
-        }
+function showAlert3(){
+alert(DB[2].state+"& it cost: "+DB[2].cost)
+}
 
 
 
