@@ -55,7 +55,7 @@ var DB = [phone001,phone002,phone003];
 
 for (i=0;i<DB.length;i++){
 console.log(DB[i]);
-tab1[i].innerText="Customer Phone_ID: "+DB[i].id;
+tab1[i].innerText="Phone_ID: "+DB[i].id;
 tab2[i].innerText="Phone_State: "+DB[i].state;
 };
 
